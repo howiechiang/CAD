@@ -1,0 +1,290 @@
+' ******************************************************************************
+' swxJRNL.swj - journal recorded on 10/11/14 by hchiang
+' *****************************************************************************
+Dim swApp As Object
+
+Dim Part As Object
+Dim boolstatus As Boolean
+Dim longstatus As Long, longwarnings As Long
+
+Sub main()
+
+Set swApp = _
+Application.SldWorks
+
+swApp.ActivateDoc2 "Master Assembly 2.SLDASM", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Dim myModelView As Object
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Part.ViewRotateminusx
+Part.ShowNamedView2 "*Isometric", 7
+boolstatus = Part.Extension.SketchBoxSelect("0.000000", "0.000000", "0.000000", "0.000000", "0.000000", "0.000000")
+boolstatus = Part.Extension.SelectByID2("Coincident2", "MATE", 0, 0, 0, False, 0, Nothing, 0)
+Part.EditDelete
+boolstatus = Part.Extension.SelectByID2("Distance1", "MATE", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Coincident3", "MATE", 0, 0, 0, False, 0, Nothing, 0)
+Part.EditDelete
+boolstatus = Part.Extension.SelectByID2("Coincident5", "MATE", 0, 0, 0, False, 0, Nothing, 0)
+Part.EditDelete
+boolstatus = Part.Extension.SelectByID2("Coincident7", "MATE", 0, 0, 0, False, 0, Nothing, 0)
+Part.EditDelete
+boolstatus = Part.Extension.SelectByID2("Coincident8", "MATE", 0, 0, 0, False, 0, Nothing, 0)
+Part.EditDelete
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.02165095500794223, 0.23411831468504829, 0.059490395288378295, False, 0, Nothing, 0)
+Part.TranslateComponent
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.02165095500794223, 0.23411831468504829, 0.059490395288378295, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.018810918084113837, 0.24037888908907235, 0.062597975951916851, False, 0, Nothing, 0)
+Part.TranslateComponent
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.018810918084113837, 0.24037888908907235, 0.062597975951916851, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.021867256024449944, 0.25275597502698588, 0.060094519045890138, False, 0, Nothing, 0)
+Part.TranslateComponent
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.021867256024449944, 0.25275597502698588, 0.060094519045890138, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.02153092640048726, 0.32887105167975506, 0.055745622054871546, False, 0, Nothing, 0)
+Part.TranslateComponent
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.02153092640048726, 0.32887105167975506, 0.055745622054871546, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.027012370946067676, 0.20304109762858502, 0.038023176042770501, False, 0, Nothing, 0)
+Part.TranslateComponent
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.027012370946067676, 0.20304109762858502, 0.038023176042770501, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "EDGE", 0.0503866724284876, 0.20205522728127789, 0.059878704517643655, False, 0, Nothing, 0)
+Part.TranslateComponent
+boolstatus = Part.Extension.SelectByID2("", "EDGE", 0.0503866724284876, 0.20205522728127789, 0.059878704517643655, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Lid-1@Master Assembly 2", "COMPONENT", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Tangent4", "MATE", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Concentric8", "MATE", 0, 0, 0, False, 0, Nothing, 0)
+Part.EditDelete
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.034570080551645788, 0.2030410976285566, 0.038354465237375734, False, 0, Nothing, 0)
+Part.TranslateComponent
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.034570080551645788, 0.2030410976285566, 0.038354465237375734, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+Part.EditUndo2 1
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.03311184762975472, 0.20304109762852818, 0.051607298391672884, False, 0, Nothing, 0)
+Part.TranslateComponent
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.03311184762975472, 0.20304109762852818, 0.051607298391672884, False, 0, Nothing, 0)
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.0078539816339745008, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.082466807156732269, -0.045446690511172769
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.25132741228718403, -0.12876562311498951
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.17278759594743903, -0.090893381022345537
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.062831853071796007, -0.037872242092643976
+Part.ClearSelection2 True
+Part.EditUndo2 1
+Part.ShowNamedView2 "*Front", 1
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.010852708709178316, 0.21189198078541105, 0.05346765002570919, False, 0, Nothing, 0)
+Part.TranslateComponent
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.010852708709178316, 0.21189198078541105, 0.05346765002570919, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.010852708709178316, 0.22650955358835784, 0.053684069886060115, False, 0, Nothing, 0)
+Part.TranslateComponent
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.010852708709178316, 0.22650955358835784, 0.053684069886060115, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "EDGE", 0.026783263748104413, 0.20038431631832063, 0.088509345897136882, False, 0, Nothing, 0)
+Part.TranslateComponent
+boolstatus = Part.Extension.SelectByID2("", "EDGE", 0.026783263748104413, 0.20038431631832063, 0.088509345897136882, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+Part.EditUndo2 1
+Part.EditUndo2 1
+Part.EditUndo2 1
+Part.EditUndo2 1
+boolstatus = Part.Extension.SelectByID2("Tangent4", "MATE", 0, 0, 0, False, 0, Nothing, 0)
+Part.EditDelete
+boolstatus = Part.Extension.SelectByID2("", "FACE", -0.017164305829802995, 0.20255297593908411, 0.078962513226201736, False, 0, Nothing, 0)
+Part.TranslateComponent
+boolstatus = Part.Extension.SelectByID2("", "FACE", -0.017164305829802995, 0.20255297593908411, 0.078962513226201736, False, 0, Nothing, 0)
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.0075744484185287951
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.098174770424681271, -0.16663786520763349
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.21991148575128605, -0.21965900413733505
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.11388273369263027, -0.090893381022345537
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.074612825522757761, -0.045446690511172769
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.019634954084936252, -0.01514889683705759
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.012530554633542579, 0.20760629023425281, 0.053499886383406192, False, 0, Nothing, 0)
+Part.TranslateComponent
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.012530554633542579, 0.20760629023425281, 0.053499886383406192, False, 0, Nothing, 0)
+Part.ShowNamedView2 "*Isometric", 7
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.023646815576114477, 0.35556478625551335, 0.053219560214586181, False, 0, Nothing, 0)
+Part.TranslateComponent
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.023646815576114477, 0.35556478625551335, 0.053219560214586181, False, 0, Nothing, 0)
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.0039269908169872504, -0.01514889683705759
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.14137166941154103, -0.20451010730027749
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.070685834705770514, -0.18936121046321988
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.011780972450961753, -0.053021138929701568
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.011780972450961753, -0.03029779367411518
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.021379391220591515, 0.37418553562201851, 0.056345404767306206, False, 0, Nothing, 0)
+Part.RotateComponent
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.021379391220591515, 0.37418553562201851, 0.056345404767306206, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.018514531618222918, 0.37999913555216835, 0.053679291120936057, False, 0, Nothing, 0)
+Part.TranslateComponent
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.018514531618222918, 0.37999913555216835, 0.053679291120936057, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.023920179049355283, 0.5155468973199504, 0.054143880805249012, False, 0, Nothing, 0)
+Part.TranslateComponent
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.023920179049355283, 0.5155468973199504, 0.054143880805249012, False, 0, Nothing, 0)
+Part.ShowNamedView2 "*Isometric", 7
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.011893035159403098, 0.3248525920826637, 0.053714155063858016, False, 0, Nothing, 0)
+Part.TranslateComponent
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.011893035159403098, 0.3248525920826637, 0.053714155063858016, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.031036404900817161, 0.2866860941483651, 0.055103132749934502, False, 0, Nothing, 0)
+Part.TranslateComponent
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.031036404900817161, 0.2866860941483651, 0.055103132749934502, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.018209160361379872, 0.52214167786928556, 0.059142560663133281, False, 0, Nothing, 0)
+Part.TranslateComponent
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.018209160361379872, 0.52214167786928556, 0.059142560663133281, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.026891283656880205, 0.29667979322988458, 0.066936964355932105, False, 0, Nothing, 0)
+Part.TranslateComponent
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.026891283656880205, 0.29667979322988458, 0.066936964355932105, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.041640822895715246, 0.47170684974179267, 0.070146148758738036, False, 0, Nothing, 0)
+Part.TranslateComponent
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.041640822895715246, 0.47170684974179267, 0.070146148758738036, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+Part.ShowNamedView2 "*Isometric", 7
+boolstatus = Part.Extension.SelectByID2("", "EDGE", 0.030700270233126048, 0.1003389875116909, 0.07575669642324101, False, 0, Nothing, 0)
+Part.TranslateComponent
+boolstatus = Part.Extension.SelectByID2("", "EDGE", 0.030700270233126048, 0.1003389875116909, 0.07575669642324101, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "VERTEX", 0.039657518818198102, 0.095195940807426327, 0.072681622412139837, False, 0, Nothing, 0)
+Part.TranslateComponent
+boolstatus = Part.Extension.SelectByID2("", "VERTEX", 0.039657518818198102, 0.095195940807426327, 0.072681622412139837, False, 0, Nothing, 0)
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.023561944901923506, 0, 0.026048507833650092, 0.29841744868801801, 0.080579905902595783
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.11780972450961753, 0.022723345255586384, 0.026048507833650092, 0.29841744868801801, 0.080579905902595783
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.12959069696057929, 0, 0.026048507833650092, 0.29841744868801801, 0.080579905902595783
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.0039269908169872504, 0, 0.026048507833650092, 0.29841744868801801, 0.080579905902595783
+boolstatus = Part.Extension.SelectByID2("", "EDGE", 0.037767132240617229, 0.091406754513457145, 0.075674051796795538, False, 0, Nothing, 0)
+Part.TranslateComponent
+boolstatus = Part.Extension.SelectByID2("", "EDGE", 0.037767132240617229, 0.091406754513457145, 0.075674051796795538, False, 0, Nothing, 0)
+Part.ShowNamedView2 "*Isometric", 7
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.037609161745649544, 0.54247481049344515, 0.07557521116495991, False, 0, Nothing, 0)
+Part.TranslateComponent
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.037609161745649544, 0.54247481049344515, 0.07557521116495991, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "FACE", -0.0018114371965225473, 0.52065646756858541, 0.084334570347550653, False, 0, Nothing, 0)
+Part.TranslateComponent
+boolstatus = Part.Extension.SelectByID2("", "FACE", -0.0018114371965225473, 0.52065646756858541, 0.084334570347550653, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.02211771537184859, 0.62380385333409549, 0.059013099055050589, False, 0, Nothing, 0)
+Part.TranslateComponent
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.02211771537184859, 0.62380385333409549, 0.059013099055050589, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.013293180820880934, 0.38147634915839035, 0.052329895976299667, False, 0, Nothing, 0)
+Part.TranslateComponent
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.013293180820880934, 0.38147634915839035, 0.052329895976299667, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.011691832902840815, 0.55110355729527782, 0.053723679756330966, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.022594130883646812, 0.58711720151370628, 0.058528537954543935, False, 0, Nothing, 0)
+Part.TranslateComponent
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.022594130883646812, 0.58711720151370628, 0.058528537954543935, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+Part.ShowNamedView2 "*Isometric", 7
+boolstatus = Part.Extension.SelectByID2("", "EDGE", 0.028453828134786363, 0.33278186168649881, 0.05243572292835097, False, 0, Nothing, 0)
+Part.TranslateComponent
+boolstatus = Part.Extension.SelectByID2("", "EDGE", 0.028453828134786363, 0.33278186168649881, 0.05243572292835097, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "VERTEX", 0.028415052304970625, 0.29832476737671298, 0.045236569414487247, False, 0, Nothing, 0)
+Part.TranslateComponent
+boolstatus = Part.Extension.SelectByID2("", "VERTEX", 0.028415052304970625, 0.29832476737671298, 0.045236569414487247, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "EDGE", 0.023969612478254021, 0.26023910781208315, 0.052918565259517436, False, 0, Nothing, 0)
+Part.TranslateComponent
+boolstatus = Part.Extension.SelectByID2("", "EDGE", 0.023969612478254021, 0.26023910781208315, 0.052918565259517436, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("", "EDGE", 0.03734314447279985, 0.1996975481985146, 0.080199859619540348, False, 0, Nothing, 0)
+Part.TranslateComponent
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.033310920431517843, 0.19361706852481575, 0.08411492835853096, False, 0, Nothing, 0)
+Part.TranslateComponent
+Part.TranslateComponent
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Knob-1@Master Assembly 2", "COMPONENT", 0, 0, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Concentric9", "MATE", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Concentric8", "MATE", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Concentric9", "MATE", 0, 0, 0, False, 0, Nothing, 0)
+Part.EditDelete
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.027905387732630516, 0.18616350337663334, 0.086656688439973095, False, 0, Nothing, 0)
+Part.TranslateComponent
+Part.ClearSelection2 True
+Part.EditUndo2 1
+boolstatus = Part.Extension.SelectByID2("Concentric8", "MATE", 0, 0, 0, False, 0, Nothing, 0)
+Part.EditDelete
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.030712110970341655, 0.19128463556069164, 0.085489765287547925, False, 0, Nothing, 0)
+Part.TranslateComponent
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.0072100592887522907, 0.15857304195020561, 0.01430395692420916, False, 0, Nothing, 0)
+Part.TranslateComponent
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.0072100592887522907, 0.15857304195020561, 0.01430395692420916, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "FACE", -0.015542018909343369, 0.15469641421753977, 0.02930151943240844, False, 0, Nothing, 0)
+Part.TranslateComponent
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.032766394533382481, 0.15635499877151915, 0.11337275038653161, False, 0, Nothing, 0)
+Part.TranslateComponent
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.032766394533382481, 0.15635499877151915, 0.11337275038653161, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.024675167322584457, 0.14846863003521094, 0.12117610873627882, False, 0, Nothing, 0)
+Part.TranslateComponent
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.024675167322584457, 0.14846863003521094, 0.12117610873627882, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.027102044561956973, 0.15267796180506821, 0.11128171520590513, False, 0, Nothing, 0)
+Part.TranslateComponent
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.027102044561956973, 0.15267796180506821, 0.11128171520590513, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SketchBoxSelect("0.000000", "0.000000", "0.000000", "0.000000", "0.000000", "0.000000")
+boolstatus = Part.Extension.SelectByID2("", "VERTEX", 0.034309435664116462, 0.35470147588229073, 0.067976024347262756, False, 0, Nothing, 0)
+Part.TranslateComponent
+boolstatus = Part.Extension.SelectByID2("", "VERTEX", 0.034309435664116462, 0.35470147588229073, 0.067976024347262756, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+Part.EditUndo2 1
+Part.EditUndo2 1
+boolstatus = Part.Extension.SelectByID2("", "EDGE", 0.028277078804251232, 0.19750965038912227, 0.088016446312508378, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "EDGE", 0.028277078804251232, 0.19750965038912227, 0.088016446312508378, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "EDGE", -0.024746728187039935, 0.13814904055851684, 0.047701596951810643, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "EDGE", -0.024746728187039935, 0.13814904055851684, 0.047701596951810643, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "FACE", -0.024206768646024557, 0.19300160328697302, 0.050196780743647196, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "FACE", -0.024002020834643645, 0.19222886457481536, 0.048446304304093246, False, 0, Nothing, 0)
+Part.FixComponent
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.035273709542934739, 0.18968578720881624, 0.082304119420598454, False, 0, Nothing, 0)
+Part.TranslateComponent
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.035273709542934739, 0.18968578720881624, 0.082304119420598454, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "FACE", -0.0091681509940713113, 0.12985495166816463, 0.054481665015828185, False, 0, Nothing, 0)
+Part.TranslateComponent
+boolstatus = Part.Extension.SelectByID2("", "FACE", -0.0091681509940713113, 0.12985495166816463, 0.054481665015828185, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.014097557970558228, 0.23038366965795376, 0.07481453760419754, False, 0, Nothing, 0)
+Part.TranslateComponent
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.014097557970558228, 0.23038366965795376, 0.07481453760419754, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Arc1@cross section@Metal Frame 2-1@Master Assembly 2", "EXTSKETCHSEGMENT", -0.023830262183965247, -0.029727573130739683, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SketchBoxSelect("0.000000", "0.000000", "0.000000", "0.000000", "0.000000", "0.000000")
+boolstatus = Part.SetUserPreferenceToggle(swUserPreferenceToggle_e.swDisplaySketches, False)
+Set Part = Nothing
+swApp.CloseDoc "Master Assembly 2.SLDASM"
+swApp.ActivateDoc2 "Master Assembly 2.SLDASM", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+boolstatus = Part.SetUserPreferenceToggle(swUserPreferenceToggle_e.swDisplaySketches, False)
+Part.ShowNamedView2 "*Isometric", 7
+swApp.ExitApp
+End Sub
